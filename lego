@@ -71,3 +71,9 @@ wget https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh
 wget https://raw.githubusercontent.com/sleventyeleven/linuxprivchecker/master/linuxprivchecker.py
 
 https://gtfobins.github.io  --  sum magic
+
+**this hoe happen sumtimes trying to run scipts**
+/bin/bash^M: bad interpreter: No such file or directory
+
+this getchu gucci
+sed -i -e 's/\r$//' *file*
