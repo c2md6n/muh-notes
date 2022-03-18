@@ -10,7 +10,7 @@
   
  
 nmap -sC -sV -p- -vv -oA -O full *host*
-nmap -sC -sV -p-  *host*   <-- this gimme what i need most the time
+nmap -sC -sV -p-  *host*   <-- this gimme what i need most time
 
 ----
 
