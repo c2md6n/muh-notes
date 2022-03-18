@@ -6,15 +6,15 @@
 .----"88__/ d88P___ 888  888  888  "88_/888  "88__/  888  888----.        
 |            -->   Z2V0IG9mZiBteSBsYXduIQ==   <--                |      															    	     														
 '----------------------------------------------------------------'                 
-               juss sum notes to get me started
+ juss sum notes to get me started haxin on offsec provin grounds.
   
  
-nmap -sC -sV -p- -vv -oA -O full 
-nmap -sC -sV -p-     <-- this gimme what i need most the time
+nmap -sC -sV -p- -vv -oA -O full *host*
+nmap -sC -sV -p-  *host*   <-- this gimme what i need most the time
 
 ----
 
-fuff -w /usr/share/wordlists/content.txt -t 1 -p 0.1 -u host -mc all -fc 404
+fuff -w /usr/share/wordlists/content.txt -t 1 -p 0.1 -u *host* -mc all -fc 404
 
 this been workin gud.
 gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 80 -x .html,.txt,.php dir -u http://*host*:*port*/
