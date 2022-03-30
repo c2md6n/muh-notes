@@ -16,6 +16,11 @@ nmap -sC -sV -p-  *host*   <-- this gimme what i need most time
 
 this been workin gud fer most
 gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 80 -x .html,.txt,.php dir -u http://*host*:*port*/
+sometimes need to define status codes to exclude. 
+-b "302,301"
+or
+specify status codes to accept
+-s "204,301,302,307,401,403"  
 
 nikto -h *host*
 
