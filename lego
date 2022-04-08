@@ -75,7 +75,7 @@ https://gtfobins.github.io  --  this sum magic
 sed -i -e 's/\r$//' *file*
 
 
-(48)
+(49)
 ----
 PLAY
 ::warm up labs completed::
@@ -116,6 +116,7 @@ Funbox
 HAWordy
 Loly
 My-CMSMS
+NoName
 SoSimple
 SunsetMidnight
 Tre
