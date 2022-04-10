@@ -23,11 +23,12 @@ specify status codes to accept
 
 nikto -h *host*
 
+peep sum smb
 enum4linux -a *host*
 
 ----
 
-searchsploit  --  exploitdb from cli
+searchsploit 
 
 msfconsole
 
@@ -71,6 +72,7 @@ https://gtfobins.github.io  --  this sum magic
 
 ::this hoe happen sumtimes trying to run scipts::
 /bin/bash^M: bad interpreter: No such file or directory
+
 ::this getchu gucci::
 sed -i -e 's/\r$//' *file*
 
