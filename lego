@@ -77,7 +77,7 @@ https://gtfobins.github.io  --  this sum magic
 sed -i -e 's/\r$//' *file*
 
 
-(53)
+(54)
 ----
 PLAY
 ::warm up labs completed::
@@ -141,8 +141,10 @@ Helpdesk
 Internal
 Kevin
 Metallus
+Pebbles
 Pwned1
 Twiggy
+Wombo
 
 
     _ 													 
