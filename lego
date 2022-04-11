@@ -77,7 +77,7 @@ https://gtfobins.github.io  --  this sum magic
 sed -i -e 's/\r$//' *file*
 
 
-(52)
+(53)
 ----
 PLAY
 ::warm up labs completed::
@@ -113,6 +113,7 @@ Wpwn
 
 ::get to work labs completed::
 Assertion101
+Born2Root
 BtrSys2.1
 Dc-4
 Deception
