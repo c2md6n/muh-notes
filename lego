@@ -15,6 +15,7 @@ nmap -sC -sV -p-  *host*   <-- this gimme what i need most time
 
 this been workin gud fer most
 gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 80 -x .html,.txt,.php dir -u http://*host*:*port*/
+
 sometimes need to define status codes to exclude. 
 -b "302,301"
 or
@@ -25,12 +26,6 @@ nikto -h *host*
 
 peep sum smb
 enum4linux -a *host*
-
-----
-
-searchsploit 
-
-msfconsole
 
 ----
 
@@ -57,16 +52,14 @@ stty columns 200 rows 200
 
 find / -perm -u=s -type f 2>/dev/null     ....mmmm suids :P~'
 
-peep da crons      smoke weed errday ౦０o ｡ (‾́。‾́ )y-~~ 
-cat /etc/crontab
-ls /etc/cron.*
-
 ::enum tools::
 wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh
 
 wget https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh
 
 wget https://raw.githubusercontent.com/sleventyeleven/linuxprivchecker/master/linuxprivchecker.py
+
+----
 
 https://gtfobins.github.io  --  this sum magic
 
