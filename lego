@@ -79,7 +79,7 @@ https://gtfobins.github.io  --  this sum magic
 sed -i -e 's/\r$//' *file*
 
 
-(66)
+(67)
 ----
 PLAY
 ::warm up labs completed::
@@ -154,6 +154,7 @@ Wombo
 
 ::get to work labs completed::
 Nibbles
+Pelican
 Quackerjack
 Snookums
 Walla
