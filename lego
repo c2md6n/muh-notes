@@ -9,12 +9,12 @@
  juss sum notes to get me started haxin on offsec provin grounds.
   
 
-nmap -sC -sV -p-  *host*   <-- this gimme what i need most time
+nmap -sV -sC -p-  *host* 
 
 ----
 
 this been workin gud fer most
-gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 80 -x .html,.txt,.php dir -u http://*host*:*port*/
+gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 80 -x .html,.php dir -u http://*host*:*port*/
 
 sometimes need to define status codes to exclude. 
 -b "302,301"
