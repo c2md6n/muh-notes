@@ -79,7 +79,7 @@ https://gtfobins.github.io  --  this sum magic
 sed -i -e 's/\r$//' *file*
 
 
-(70)
+(71)
 ----
 PLAY
 ::warm up labs completed::
@@ -140,6 +140,7 @@ Algernon
 Bratarina
 ClamAV
 Exfiltrated
+Exghost
 Fantastic
 Hawat
 Helpdesk
