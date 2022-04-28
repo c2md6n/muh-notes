@@ -79,7 +79,7 @@ https://gtfobins.github.io  --  this sum magic
 sed -i -e 's/\r$//' *file*
 
 
-(71)
+(72)
 ----
 PLAY
 ::warm up labs completed::
@@ -165,6 +165,9 @@ WebCal
 XposedAPI
 ZenPhoto
 Zino
+
+::try harder labs completed::
+Sirol
 
 
     _ 													 
