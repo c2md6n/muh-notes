@@ -14,13 +14,7 @@ nmap -sV -sC -p-  *host*
 ----
 
 this been workin gud fer most
-gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 80 -x .html,.php dir -u http://*host*:*port*/
-
-sometimes need to define status codes to exclude. 
--b "302,301"
-or
-specify status codes to accept
--s "204,301,302,307,401,403"  
+gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 80 -x *ext* dir -u http://*host*:*port*/
 
 nikto -h *host*
 
@@ -55,11 +49,14 @@ export TERM=xterm-256color
 alias ll='ls -lsaht --color=auto'
 Ctrl + Z [Background Process]
 stty raw -echo ; fg ; reset
-stty columns 200 rows 200
 
 ----
 
 find / -perm -u=s -type f 2>/dev/null     ....mmmm suids :P~'
+
+peep the crons
+cat /etc/crontab
+ls /etc/cron.*
 
 ::enum tools::
 wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh
@@ -71,12 +68,6 @@ wget https://raw.githubusercontent.com/sleventyeleven/linuxprivchecker/master/li
 ----
 
 https://gtfobins.github.io  --  this sum magic
-
-::this hoe happen sumtimes trying to run scipts::
-/bin/bash^M: bad interpreter: No such file or directory
-
-::this getchu gucci::
-sed -i -e 's/\r$//' *file*
 
 
 (75)
